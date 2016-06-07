@@ -17,7 +17,7 @@ options.k = 5;
 
 options.maxIter = 200;
 options.minIter = 50;
-options.Rounds = 1;
+options.Rounds = 5;
 options.nRepeat = 1;
 options.error = 1e-5;
 options.clusteringFlag = 0;
