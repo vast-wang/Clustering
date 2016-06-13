@@ -6,9 +6,9 @@ addpath(genpath('Dataset/'));
 addpath(genpath('Results/'));
 datadir = 'Dataset/';
 resultdir = 'Results/';
-dataname = {'3sources','BBC2view_2012','BBCSport2view_544','20newsgroups', 'WikipediaArticles'};
+dataname = {'3sources','BBC4view_685','BBCSport2view_544','20newsgroups', 'WikipediaArticles'};
 numdata = length(dataname);
-for cdata = 1:1
+for cdata = 1:numdata % choose the dataset
 %% parameter setting
 options = [];
 options.WeightMode = 'HeatKernel';
