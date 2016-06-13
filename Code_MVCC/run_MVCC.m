@@ -1,6 +1,5 @@
 clear all
 clc
-close all
 %% set and add the path ...
 addpath(genpath('Dataset/'));
 addpath(genpath('Results/'));
@@ -8,7 +7,7 @@ datadir = 'Dataset/';
 resultdir = 'Results/';
 dataname = {'3sources','BBC4view_685','BBCSport2view_544','20newsgroups', 'WikipediaArticles'};
 numdata = length(dataname);
-for cdata = 1:numdata % choose the dataset
+for cdata = 1:1 % choose the dataset
 %% parameter setting
 options = [];
 options.WeightMode = 'HeatKernel';
