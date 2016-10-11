@@ -1,4 +1,4 @@
-Temporary Title: Multi-View Clustering via Concept Factorization with Local Manifold Regularization (MVCC)
+Title: Multi-View Clustering via Concept Factorization with Local Manifold Regularization (MVCC)
 --------------------------------------------------------------
 
 The project deals with multi-view clustering problem. The work has been accepted by IEEE ICDM 2016. If you have any questions, please do not hesitate to contact us. (Email: hwang@my.swjtu.edu.cn)
