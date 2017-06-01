@@ -5,6 +5,10 @@ addpath(genpath('Dataset/'));
 addpath(genpath('Results/'));
 datadir = 'Dataset/';
 resultdir = 'Results/';
+if(~exist('Results','file'))
+    mkdir('Results');
+    addpath(genpath('Results/'));
+end
 dataname = {'3sources','BBC4view_685','BBCSport2view_544','20newsgroups', 'WikipediaArticles'};
 numdata = length(dataname);
 for cdata = 1:1 % choose the dataset
