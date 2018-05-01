@@ -21,7 +21,7 @@ obj = zeros();
 Norm = 2; %normalize to have unit norm L_2; if Norm = 1, to have unit norm L_1 
 NormV = 1;
 
-%% kernel matrix X'*X£¬ calculate weight matrix W and Laplace matrix L
+%% kernel matrix X'*XÂ£Â¬ calculate weight matrix W and Laplace matrix L
 for i = 1:view_num
     % nums of dimensions and samples
     [d{i},n{i}] = size(data{i});
@@ -66,8 +66,8 @@ while iR < Rounds
     %==================The first method================================
         for i= 1: view_num
             ilabels = zeros(n{i},view_num);
-            ilabels(:,i) = kmeans(data{i}',numC,'replicates',20);
-            %ilabels(:,i) = litekmeans(data{i}',numC,'Replicates',20);
+            %ilabels(:,i) = kmeans(data{i}',numC,'replicates',20);
+            ilabels(:,i) = litekmeans(data{i}',numC,'Replicates',20);
             G = zeros(n{i},numC);
             for j=1:numC
                 G(:,j)=(ilabels(:,i)==j*ones(n{i},1));
