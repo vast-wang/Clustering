@@ -1,7 +1,7 @@
 function [Vall_, Veach_, obj_] = MVCC(data,truelabel,options,view_num,numC)
-%function MVCC(data,truelabel,options,view_num,numC)
+% function MVCC(data,truelabel,options,view_num,numC)
 % Summary of this function goes here
-%   Detailed explanation goes here
+% Detailed explanation goes here
 
 %% initialize ...
 new_error = inf;
@@ -18,10 +18,10 @@ opts = optimset('Algorithm','interior-point-convex','Display','off');
 V_all = zeros();
 obj = zeros();
 
-Norm = 2; %normalize to have unit norm L_2; if Norm = 1, to have unit norm L_1 
+Norm = 2; % normalize to have unit norm L_2; if Norm = 1, to have unit norm L_1 
 NormV = 1;
 
-%% kernel matrix X'*X£¬ calculate weight matrix W and Laplace matrix L
+%% kernel matrix X'*X, the weight matrix W and Laplace matrix L
 for i = 1:view_num
     % nums of dimensions and samples
     [d{i},n{i}] = size(data{i});
